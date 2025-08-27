@@ -1,24 +1,258 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 2: Misión 02: Tu Copiloto IA y el Mapa de tu Mente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2: Misión 02: Tu Copiloto IA y el Mapa de tu Mente</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Resumen de la Misión</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Familiarizarse con la plataforma de gestión del aprendizaje <strong>Gnius Space</strong> y entender su propósito.</li>
+                                        <li>Conocer a <strong>Xolo</strong>, el asistente de IA, y comprender su rol como un "copiloto de desarrollo" y no como un simple buscador de respuestas.</li>
+                                        <li>Entender la importancia de la personalización en el aprendizaje y la necesidad de los <strong>Tests Pathfinder</strong> para "calibrar" a Xolo.</li>
+                                    </ul>
+                                    <strong>Secuencia de la Misión:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Tu Dashboard de Innovación: Un Tour por Gnius Space:</strong> (10 min)</li>
+                                        <li><strong class="tactic-highlight">⚡Conoce a tu Copiloto: Presentando a Xolo:</strong> (10 min)</li>
+                                        <li><strong class="tactic-highlight">⚡Calibrando tu IA: La Misión Pathfinder:</strong> (20 min)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Estudiantes capaces de navegar en Gnius Space.</li>
+                                        <li>Comprensión inicial del rol de Xolo.</li>
+                                        <li>Tests Pathfinder (Learning Profile y HEXAD) completados por cada estudiante.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Credenciales de acceso a Gnius Space para cada estudiante.</li>
+                                        <li>Video-tutorial de Gnius Space (aprox. 2-3 min).</li>
+                                        <li>Presentación de diapositivas para guiar la sesión.</li>
+                                        <li>Acceso directo al chat de Xolo y a los Tests Pathfinder (Learning Profile & HEXAD) dentro de Gnius Space.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para el Facilitador:</strong>
+                                    <ol>
+                                        <li><strong>Verificación de Cuentas:</strong> Probar al menos un par de cuentas de estudiantes en Gnius Space para asegurar que el acceso funciona correctamente.</li>
+                                        <li><strong>Tutorial Listo:</strong> Tener el video-tutorial de Gnius Space precargado para una transición fluida.</li>
+                                        <li><strong>Familiarización con los Tests:</strong> Realizar los dos Tests Pathfinder para entender la experiencia del estudiante y estar preparado para responder preguntas.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Tu Dashboard de Innovación: Un Tour por Gnius Space ⏰ 10 minutos</h2>
+                <p>Introducir Gnius Space como el centro de mando profesional para la trayectoria de aprendizaje del estudiante, donde gestionarán su progreso, proyectos y recursos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Del Taller a la Torre de Control ⏰ 2 minutos</h3>
+                            <p>(El facilitador inicia con una analogía que conecta la sesión anterior con esta).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Qué tal, equipo! En la última sesión, cada uno de ustedes forjó la llave de su propio taller digital al crear su cuenta en Delightex. Ese es su espacio de construcción. Pero todo arquitecto, todo director de proyecto, no solo necesita un taller; necesita una torre de control desde donde pueda ver todo el panorama, gestionar los recursos y monitorear el progreso de cada misión. Hoy, van a recibir acceso a esa torre de control. Se llama <strong>Gnius Space</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Presentación y Recorrido en Video ⏰ 5 minutos</h3>
+                            <p>(El facilitador proyecta la interfaz de Gnius Space y luego el video-tutorial).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Gnius Space es mucho más que una página web con sus tareas. Es su dashboard de innovación. Es el lugar donde van a poder rastrear las habilidades y competencias que están desarrollando, casi como un árbol de habilidades en un videojuego. Es donde encontrarán los briefings para cada misión, los recursos técnicos y, lo más importante, el portafolio donde sus creaciones quedarán registradas. Antes de que entren, vamos a ver un recorrido rápido para que se familiaricen con la interfaz y sus funciones clave.</p>
+                                <p class="dialogue assistant">(Reproducir el video-tutorial de Gnius Space. El video debe ser dinámico y claro, mostrando cómo iniciar sesión, encontrar misiones, ver el progreso de competencias y acceder al portafolio).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Primer Acceso y Exploración Libre ⏰ 3 minutos</h3>
+                            <p>(El facilitador entrega las credenciales a cada estudiante).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto. Ahora tienen la teoría. Es momento de la práctica. Les voy a entregar sus credenciales de acceso. Una vez que las tengan, quiero que inicien sesión y se tomen un par de minutos para explorar. Hagan clic en las diferentes secciones, familiarícense con el entorno. No se preocupen por entenderlo todo al 100% ahora mismo; el objetivo es que se sientan cómodos navegando en su propio espacio. Si alguien tiene algún problema para entrar, levante la mano de inmediato.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conoce a tu Copiloto: Presentando a Xolo ⏰ 10 minutos</h2>
+                <p>Presentar a Xolo no como un buscador de respuestas, sino como un colaborador de IA (un "copiloto"), estableciendo las expectativas correctas para su interacción a lo largo del año.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Evolución de la Ayuda ⏰ 3 minutos</h3>
+                            <p>(El facilitador pide a los estudiantes que regresen a la pantalla principal).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, ahora que ya conocen su torre de control, hablemos de la herramienta más potente que tendrán dentro de ella. Cuando ustedes tienen una duda técnica, ¿qué es lo primero que hacen? Seguramente buscar en Google o ver un video tutorial, ¿cierto? Eso es eficiente, pero es un proceso pasivo. Tú preguntas, el buscador te da un millón de respuestas y tú tienes que encontrar la correcta. Es como buscar una herramienta específica en una ferretería gigante sin ayuda. Hoy, vamos a superar ese modelo. Van a conocer a su <strong>copiloto de desarrollo</strong>: Xolo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Presentando a Xolo, el Asistente de IA ⏰ 5 minutos</h3>
+                            <p>(Proyectar una diapositiva que muestre a Xolo, el ajolote-logo, y algunas viñetas de sus capacidades).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Xolo no es un buscador. Es un asistente de IA conversacional diseñado por Gnius específicamente para este programa. Piensen en él menos como un Google y más como un colega experto sentado a su lado. No está aquí para darles la respuesta final y que la copien y peguen. Su función es colaborar.</p>
+                                <ul>
+                                    <li><strong>¿Necesitas inspiración?</strong> Xolo puede actuar como un 'sparring' creativo, lanzando ideas que no habías considerado.</li>
+                                    <li><strong>¿Tienes un error en tu código?</strong> En lugar de solo darte la solución, puedes mostrarle tu código y el problema, y él te ayudará a razonar para encontrar el fallo, como lo haría un desarrollador senior.</li>
+                                    <li><strong>¿Quieres entender un concepto complejo?</strong> Xolo puede explicártelo con analogías basadas en tus intereses, algo que un tutorial genérico no puede hacer.</li>
+                                </ul>
+                                <p class="dialogue assistant">La clave es la interacción. Ustedes son los directores del proyecto. Xolo es el recurso de élite que aumentará sus capacidades. No le pidan 'la respuesta'. Dialoguen con él para construir la solución. Esta es la habilidad que distingue a los desarrolladores del futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: El Portal a Xolo en Gnius Space ⏰ 2 minutos</h3>
+                            <p>Guiar a los estudiantes para que encuentren y abran la interfaz de chat con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, en Gnius Space, localicen el ícono del chat de Xolo. Hagan clic en él. Deberían ver la interfaz de conversación lista para su primera interacción. Salúdenlo si quieren. Hoy, la conversación que tendremos con él será muy específica. Porque para que este copiloto sea realmente útil para *ustedes*, primero necesita conocerlos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                 <h2>⚡ Actividad 3: Calibrando tu IA: La Misión Pathfinder ⏰ 20 minutos</h2>
+                <p>Que los estudiantes completen los tests diagnósticos, entendiendo que el propósito es personalizar la interacción con Xolo para hacer el aprendizaje más efectivo y atractivo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Lógica de la Personalización ⏰ 5 minutos</h3>
+                            <p>Explicar el "porqué" de los tests diagnósticos y la importancia de la calibración.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto. Ahora vamos a la parte más crucial de hoy. Para que su colaboración con Xolo sea verdaderamente poderosa, necesitamos 'calibrarlo'. Imaginen que Xolo es un traje de alta tecnología, como el de Iron Man. Un traje así no funciona 'talla única para todos'. Tiene que ser ajustado y calibrado a las medidas y estilo de combate de su piloto. Lo mismo pasa con un copiloto de IA. Para que Xolo les dé explicaciones y desafíos que realmente conecten con ustedes, necesita entender dos cosas clave: cómo aprenden y qué los motiva.</p>
+                                <p class="dialogue assistant">Hoy, van a ayudar a Xolo a entenderlos completando su primera misión: la <strong>Misión Pathfinder</strong>. Consiste en dos diagnósticos muy cortos y visuales. No hay respuestas correctas o incorrectas. Son simplemente una herramienta para mapear su estilo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Instrucciones para los Tests Pathfinder ⏰ 12 minutos</h3>
+                            <p>(Proyectar diapositivas que expliquen brevemente cada test).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">En la conversación con Xolo, escriban exactamente esto: 'Xolo, estoy listo para la Misión Pathfinder'. Él les proporcionará los enlaces y las instrucciones.</p>
+                                 <p class="dialogue assistant"><strong>El primer test es el 'Perfil de Aprendizaje Gnius'</strong>. Su objetivo es identificar cómo procesan mejor la información. ¿Son más visuales y aprenden con diagramas? ¿Son más kinestésicos y necesitan 'hacer' para entender? ¿O son más lógicos y prefieren textos y pasos numerados? Esta información permitirá a Xolo adaptar sus explicaciones. Por ejemplo, a alguien visual podría responderle con un diagrama, mientras que a alguien más lógico le daría una lista de pasos.</p>
+                                 <p class="dialogue assistant"><strong>El segundo test es para identificar su 'Tipo de Jugador'</strong>. Esto no se trata de qué videojuegos les gustan, sino de qué los motiva intrínsecamente en cualquier actividad. ¿Les motiva competir y ganar (Perfil *Achiever*)? ¿Les gusta explorar sin un objetivo fijo (Perfil *Explorer*)? ¿O disfrutan más ayudando a otros (Perfil *Socializer*)? Entender esto le permite a Xolo proponerles desafíos y proyectos que encuentren genuinamente interesantes.</p>
+                                 <p class="dialogue assistant">Tómense los próximos minutos para completar ambos tests con calma y honestidad. Recuerden, esto es para ustedes. Cuanto más precisa sea la información, mejor calibrado estará su copiloto para el resto del año. Si terminan, pueden explorar los resultados que Gnius Space les muestra. Si tienen alguna pregunta, levanten la mano.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Cierre y Siguiente Misión ⏰ 3 minutos</h3>
+                            <p>(El facilitador llama la atención del grupo una vez que la mayoría ha terminado).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente trabajo, equipo! Acaban de completar la calibración de su copiloto. Ahora Xolo tiene el mapa básico de su mente y está mucho mejor preparado para asistirlos en su viaje. Han explorado su torre de control, han conocido a su asistente de IA y le han dado las herramientas para entenderlos.</p>
+                                <p class="dialogue assistant">En nuestra próxima sesión, pondremos todo esto en acción. Introduciremos el concepto de <strong>Vibe Coding</strong> y tendrán su primer <strong>Gnius Storm</strong>: su primera creación oficial, donde dialogarán con Xolo para traducir una de sus ideas a un resultado tangible. Prepárense, porque aquí es donde la verdadera aventura comienza. ¡Nos vemos en la siguiente misión!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
